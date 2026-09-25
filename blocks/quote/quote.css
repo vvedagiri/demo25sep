@@ -14,7 +14,6 @@
 .block.quote > div:last-child > div {
     margin: 0 16px;
     font-size: small;
-    font-style: italic;
     position: relative;
 }
 
@@ -43,7 +42,6 @@
 .block.quote > div:last-child > div {
     margin: 0 16px;
     font-size: small;
-    font-style: italic;
     position: relative;
 }
 
