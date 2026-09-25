@@ -2,7 +2,8 @@
   {
     "id": "main",
     "components": [
-      "section"
+      "section",
+      "fragment"
     ]
   },
   {
@@ -14,8 +15,7 @@
       "title",
       "hero",
       "cards",
-      "columns",
-      "fragment"
+      "columns"
     ]
   },
   {
