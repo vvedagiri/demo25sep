@@ -1,0 +1,13 @@
+{
+  "sites": {
+    "demo25sep": {
+      "previewOrg": "vvedagiri",
+      "previewSite": "demo25sep",
+      "contentHostUrl": "author-p219004-e2262311.adobeaemcloud.com",
+      "aemSitePath": "/content/demosep25",
+      "aemAssetsFolderPath": "/content/dam/demosep25",
+      "aemSiteName": "demosep25",
+      "aemSiteTitle": "Demo Sep 25"
+    }
+  }
+}

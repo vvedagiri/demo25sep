@@ -1,0 +1,26 @@
+{
+  "variantName": "columns-hero",
+  "baseBlock": "columns",
+  "visualCharacteristics": {
+    "structure": "1 row, 2 cells: [h1, p, 2 links] | [3 images]",
+    "sectionStyle": "grey",
+    "rationale": "light-grey split hero: H1+CTAs beside 3-image rounded collage"
+  },
+  "contentPattern": {
+    "structure": "1 row, 2 cells: [h1 heading, subheading paragraph, one or more CTA links each in its own paragraph] | [2+ images forming a collage]",
+    "imageCount": 3,
+    "buttonCount": 2
+  },
+  "usage": {
+    "pagesUsing": [
+      "https://www.wknd-trendsetters.site/"
+    ],
+    "reuseCount": 0,
+    "lastUsed": "2026-09-29"
+  },
+  "canonicalModel": "standalone",
+  "options": [],
+  "memberVariantIds": [
+    "columns-hero"
+  ]
+}

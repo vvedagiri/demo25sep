@@ -1,0 +1,26 @@
+{
+  "variantName": "accordion-faq",
+  "baseBlock": "accordion",
+  "visualCharacteristics": {
+    "structure": "4 rows, 2 cells: [question] | [answer paragraph]",
+    "sectionStyle": "light",
+    "rationale": "bordered rounded rows with plus icon, right column"
+  },
+  "contentPattern": {
+    "structure": "2 cells: [question text] | [answer rich text]",
+    "imageCount": 0,
+    "buttonCount": 0
+  },
+  "usage": {
+    "pagesUsing": [
+      "https://www.wknd-trendsetters.site/"
+    ],
+    "reuseCount": 0,
+    "lastUsed": "2026-09-29"
+  },
+  "canonicalModel": "collection",
+  "options": [],
+  "memberVariantIds": [
+    "accordion-faq"
+  ]
+}

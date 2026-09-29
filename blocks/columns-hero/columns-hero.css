@@ -1,0 +1,69 @@
+/* layout: mobile/tablet stack text above collage (source: 1 column below desktop) */
+.columns-hero > .columns-hero-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 64px;
+  align-items: center;
+}
+
+/* text column */
+.columns-hero .columns-hero-text-col > :first-child {
+  margin-top: 0;
+}
+
+.columns-hero .columns-hero-text-col h1 {
+  margin-bottom: 0;
+}
+
+.columns-hero .columns-hero-text-col h1 + p {
+  margin-top: 24px;
+  font-size: var(--body-font-size-l);
+  line-height: 1.6;
+}
+
+/* CTA group: links side by side, wrapping on narrow screens */
+.columns-hero .columns-hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 32px;
+}
+
+.columns-hero .columns-hero-actions > .columns-hero-cta {
+  margin: 0;
+}
+
+/* image collage: single column on mobile/tablet */
+.columns-hero .columns-hero-collage {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 8px;
+}
+
+.columns-hero .columns-hero-collage > * {
+  margin: 0;
+}
+
+.columns-hero .columns-hero-collage picture {
+  display: block;
+}
+
+.columns-hero .columns-hero-collage img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 3 / 2;
+  border-radius: var(--radius-card);
+  object-fit: cover;
+}
+
+@media (width >= 900px) {
+  .columns-hero > .columns-hero-row {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  /* 2-up collage: two images on top, third wraps below */
+  .columns-hero .columns-hero-collage {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}

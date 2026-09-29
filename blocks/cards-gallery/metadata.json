@@ -1,0 +1,26 @@
+{
+  "variantName": "cards-gallery",
+  "baseBlock": "cards",
+  "visualCharacteristics": {
+    "structure": "8 rows, 1 cell each: [image]",
+    "sectionStyle": "grey",
+    "rationale": "image-only 4-col square grid, no text"
+  },
+  "contentPattern": {
+    "structure": "1 cell: [image]",
+    "imageCount": 8,
+    "buttonCount": 0
+  },
+  "usage": {
+    "pagesUsing": [
+      "https://www.wknd-trendsetters.site/"
+    ],
+    "reuseCount": 0,
+    "lastUsed": "2026-09-29"
+  },
+  "canonicalModel": "collection",
+  "options": [],
+  "memberVariantIds": [
+    "cards-gallery"
+  ]
+}

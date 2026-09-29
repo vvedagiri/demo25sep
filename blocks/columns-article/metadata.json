@@ -1,0 +1,26 @@
+{
+  "variantName": "columns-article",
+  "baseBlock": "columns",
+  "visualCharacteristics": {
+    "structure": "1 row, 2 cells: [image] | [breadcrumb links paragraph, h2, byline paragraphs]",
+    "sectionStyle": "light",
+    "rationale": "white; 3:2 image beside breadcrumb, H2, byline"
+  },
+  "contentPattern": {
+    "structure": "1 row, 2 cells: [feature image] | [breadcrumb paragraph of links, h2 title, byline paragraphs (author, date/read time)]",
+    "imageCount": 1,
+    "buttonCount": 0
+  },
+  "usage": {
+    "pagesUsing": [
+      "https://www.wknd-trendsetters.site/"
+    ],
+    "reuseCount": 0,
+    "lastUsed": "2026-09-29"
+  },
+  "canonicalModel": "standalone",
+  "options": [],
+  "memberVariantIds": [
+    "columns-article"
+  ]
+}
