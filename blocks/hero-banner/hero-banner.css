@@ -1,0 +1,86 @@
+/* image and text rows share one grid cell so the text overlays the image */
+.hero-banner {
+  position: relative;
+  display: grid;
+  grid-template: 1fr / 1fr;
+  min-height: 400px;
+  overflow: hidden;
+}
+
+.hero-banner > div {
+  grid-area: 1 / 1;
+}
+
+/* media fills the block without driving its height; the text row sets the size */
+.hero-banner > .hero-banner-media {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+/* dark overlay keeps the text readable over the photo */
+.hero-banner > .hero-banner-media::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgb(0 0 0 / 50%);
+}
+
+.hero-banner > .hero-banner-media > div,
+.hero-banner > .hero-banner-media p,
+.hero-banner > .hero-banner-media picture {
+  height: 100%;
+  margin: 0;
+}
+
+.hero-banner > .hero-banner-media picture {
+  display: block;
+}
+
+.hero-banner > .hero-banner-media img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-banner > .hero-banner-content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 24px;
+  padding: 32px 24px;
+}
+
+.hero-banner:not(.hero-banner-no-media) > .hero-banner-content,
+.hero-banner:not(.hero-banner-no-media) > .hero-banner-content a:any-link {
+  color: #fff;
+}
+
+.hero-banner > .hero-banner-content > div > :first-child {
+  margin-top: 0;
+}
+
+.hero-banner > .hero-banner-content > div > :last-child {
+  margin-bottom: 0;
+}
+
+.hero-banner.hero-banner-no-media {
+  min-height: 0;
+}
+
+@media (width >= 900px) {
+  .hero-banner {
+    min-height: 480px;
+  }
+
+  .hero-banner > .hero-banner-content {
+    padding: 64px;
+  }
+
+  .hero-banner > .hero-banner-content > div {
+    max-width: 60%;
+  }
+}

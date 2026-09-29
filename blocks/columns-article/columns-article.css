@@ -1,0 +1,91 @@
+/* layout: single column on mobile/tablet, two equal columns on desktop */
+.columns-article > .columns-article-row {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+  align-items: center;
+}
+
+.columns-article > .columns-article-row > div {
+  min-width: 0;
+}
+
+/* feature image */
+.columns-article .columns-article-img-col > * {
+  margin: 0;
+}
+
+.columns-article .columns-article-img-col picture {
+  display: block;
+}
+
+.columns-article .columns-article-img-col img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+  border-radius: var(--radius-card);
+}
+
+/* text column */
+.columns-article .columns-article-text-col > :first-child {
+  margin-top: 0;
+}
+
+.columns-article .columns-article-text-col h2 {
+  margin: 0;
+}
+
+/* breadcrumb: Home / Case studies */
+.columns-article .columns-article-breadcrumb {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin: 0 0 32px;
+  color: var(--text-color);
+  font-size: var(--body-font-size-m);
+  line-height: 1.6;
+}
+
+.columns-article .columns-article-breadcrumb a:any-link {
+  display: block;
+  color: var(--text-color);
+  font-weight: 500;
+}
+
+.columns-article .columns-article-breadcrumb a:hover {
+  text-decoration: none;
+  opacity: 0.7;
+}
+
+.columns-article .columns-article-breadcrumb a:any-link:last-child {
+  color: var(--text-secondary-color);
+}
+
+/* byline: author + date / read time */
+.columns-article .columns-article-byline {
+  margin: 8px 0 0;
+  color: var(--text-secondary-color);
+  font-size: var(--body-font-size-s);
+  line-height: 1.6;
+}
+
+.columns-article h2 + .columns-article-byline {
+  margin-top: 16px;
+}
+
+.columns-article .columns-article-byline-author {
+  color: var(--text-color);
+}
+
+.columns-article .columns-article-byline-label {
+  color: var(--text-secondary-color);
+}
+
+@media (width >= 900px) {
+  .columns-article > .columns-article-row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

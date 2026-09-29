@@ -15,13 +15,50 @@
       "hero",
       "cards",
       "columns",
-      "quote"
+      "fragment",
+      "columns-hero",
+      "columns-article",
+      "cards-gallery",
+      "tabs-testimonial",
+      "cards-article",
+      "accordion-faq",
+      "hero-banner"
+    ]
+  },
+  {
+    "id": "accordion-faq",
+    "components": [
+      "accordion-faq-item"
+    ]
+  },
+  {
+    "id": "cards-article",
+    "components": [
+      "cards-article-card"
+    ]
+  },
+  {
+    "id": "cards-gallery",
+    "components": [
+      "cards-gallery-item"
     ]
   },
   {
     "id": "cards",
     "components": [
       "card"
+    ]
+  },
+  {
+    "id": "columns-article",
+    "components": [
+      "column"
+    ]
+  },
+  {
+    "id": "columns-hero",
+    "components": [
+      "column"
     ]
   },
   {
@@ -37,6 +74,12 @@
       "image",
       "button",
       "title"
+    ]
+  },
+  {
+    "id": "tabs-testimonial",
+    "components": [
+      "tabs-testimonial-item"
     ]
   }
 ]

@@ -1,0 +1,48 @@
+/* source: intro block above the gallery has 128px bottom margin (utility-margin-bottom-8rem) */
+main > .section > .cards-gallery-wrapper {
+  margin-top: 128px;
+}
+
+.cards-gallery > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+}
+
+.cards-gallery .cards-gallery-item {
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  border-radius: var(--radius-card);
+}
+
+.cards-gallery .cards-gallery-item-image,
+.cards-gallery .cards-gallery-item-image > p,
+.cards-gallery .cards-gallery-item picture {
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  line-height: 0;
+}
+
+.cards-gallery .cards-gallery-item img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (width >= 600px) {
+  .cards-gallery > ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (width >= 900px) {
+  .cards-gallery > ul {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

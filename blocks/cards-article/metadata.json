@@ -1,0 +1,26 @@
+{
+  "variantName": "cards-article",
+  "baseBlock": "cards",
+  "visualCharacteristics": {
+    "structure": "4 rows, 2 cells: [image] | [tag, date, h3 title linked to article]",
+    "sectionStyle": "grey",
+    "rationale": "linked article cards: image, tag pill, date, uppercase title"
+  },
+  "contentPattern": {
+    "structure": "2 cells: [image] | [tag paragraph, date paragraph, h3 title linked to the article]",
+    "imageCount": 4,
+    "buttonCount": 0
+  },
+  "usage": {
+    "pagesUsing": [
+      "https://www.wknd-trendsetters.site/"
+    ],
+    "reuseCount": 0,
+    "lastUsed": "2026-09-29"
+  },
+  "canonicalModel": "collection",
+  "options": [],
+  "memberVariantIds": [
+    "cards-article"
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "variantName": "hero-banner",
+  "baseBlock": "hero",
+  "visualCharacteristics": {
+    "structure": "Row 1: [background image]; Row 2: [h2, paragraph, link]",
+    "sectionStyle": "dark",
+    "rationale": "rounded inset card, bg photo + dark overlay, white text, pill CTA"
+  },
+  "contentPattern": {
+    "structure": "Row 1: [background image]; Row 2: [h2 heading, paragraph, CTA link paragraph]",
+    "imageCount": 1,
+    "buttonCount": 1
+  },
+  "usage": {
+    "pagesUsing": [
+      "https://www.wknd-trendsetters.site/"
+    ],
+    "reuseCount": 0,
+    "lastUsed": "2026-09-29"
+  },
+  "canonicalModel": "standalone",
+  "options": [],
+  "memberVariantIds": [
+    "hero-banner"
+  ]
+}

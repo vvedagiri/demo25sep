@@ -50,7 +50,14 @@
         "hero",
         "cards",
         "columns",
-        "fragment"
+        "fragment",
+        "columns-hero",
+        "columns-article",
+        "cards-gallery",
+        "tabs-testimonial",
+        "cards-article",
+        "accordion-faq",
+        "hero-banner"
       ]
     }
   ]
